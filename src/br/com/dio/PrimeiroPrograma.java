@@ -12,5 +12,41 @@ public class PrimeiroPrograma {
 
         System.out.println(gato);
 
+        Livro livro1 = new Livro("O problema dos 3 corpos", 300);
+        System.out.println(livro1);
+    }
+}
+
+class Livro {
+    private String nome;
+    private Integer numPages;
+
+    public Livro(String nome, Integer numPages) {
+        this.nome = nome;
+        this.numPages = numPages;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getNumPages() {
+        return numPages;
+    }
+
+    public void setNumPages(Integer numPages) {
+        this.numPages = numPages;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "nome='" + nome + '\'' +
+                ", numPages=" + numPages +
+                '}';
     }
 }
